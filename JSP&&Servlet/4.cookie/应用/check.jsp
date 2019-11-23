@@ -16,6 +16,8 @@
         String uName = request.getParameter("uname");
         String uPwd = request.getParameter("upwd");
 
+        //服务端在响应客户端时，会发送一个JSESSIONID的cookie
+
         //将用户名加到cookie中
         Cookie cookie = new Cookie("name",uName);
 
